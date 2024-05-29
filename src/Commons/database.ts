@@ -26,7 +26,7 @@ export const DatabaseProviders = [
         username: globalVars.database.username || 'root',
         password: globalVars.database.password || 'root',
         entities: [__dirname + '/**/*.entity.js'],
-        synchronize: false
+        synchronize: false,
       });
 
       return database.initialize();
